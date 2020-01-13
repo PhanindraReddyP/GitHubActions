@@ -4,6 +4,7 @@ on:
   push:
     paths:
     - 'src/**'
+    - '!src/data/**'
   
 jobs:
   build:
