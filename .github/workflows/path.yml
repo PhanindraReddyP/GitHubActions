@@ -3,8 +3,8 @@ name: Path on Push trigger
 on: 
   push:
     paths:
-    - '!src/data/**'
     - 'src/**'
+    - '!src/data/**'
   
 jobs:
   build:
