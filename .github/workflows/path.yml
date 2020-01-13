@@ -1,11 +1,11 @@
-name: Path on Push trigger
+name: Path on Push and Fork trigger
 
 on: 
   push:
     paths:
     - 'src/**'
     - '!src/data/**'
-  
+  fork:
 jobs:
   build:
     strategy:
