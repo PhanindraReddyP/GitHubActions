@@ -3,8 +3,8 @@ name: Path on Push trigger
 on: 
   push:
     paths:
-      - 'GitHubActions/src/**'
-      - '!GitHubActions/src/data/**'
+    - 'GitHubActions/src/**'
+    - '!GitHubActions/src/data/**'
   
 jobs:
   build:
