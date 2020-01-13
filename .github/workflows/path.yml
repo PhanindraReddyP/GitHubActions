@@ -1,0 +1,22 @@
+name: Path on Push trigger
+
+on: 
+  push:
+    paths:
+      - 'GitHubActions/src/**'
+      - '!GitHubActions/src/data/**'
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Checking on Path option trigger!
+    - name: Run a multi-line script
+      run: |
+        echo Checking on path option 
+        echo in the on push trigger.
+        
