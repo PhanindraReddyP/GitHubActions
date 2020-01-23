@@ -21,6 +21,9 @@ jobs:
     - name: Run a multi-line script
       if: github.event_name == 'fork'
       run: |
+        pwd 
+        ls
+        ll
         echo Checking on If Condition 
         echo in the on push trigger with strategy matrix and max-parallel.
         
