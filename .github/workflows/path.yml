@@ -18,7 +18,7 @@ jobs:
       if: github.repository == 'PhanindraReddyP/GitHubActions' && github.event_name == 'push'
       run: echo Checking on if condition here...!
     - name: Run a multi-line script
-      if: github.event_name == 'fork'
+  #    if: github.event_name == 'fork'
       run: |
         pwd 
         ls
